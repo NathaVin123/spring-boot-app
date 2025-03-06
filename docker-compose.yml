@@ -3,9 +3,9 @@ version: "3.8"
 services:
   spring-app:
     build: .
-    container_name: spring-boot-app
+    container_name: spring-boot-app-live
     ports:
-      - "8084:8080"
+      - "8085:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=prod
     restart: unless-stopped
